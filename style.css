@@ -1,0 +1,110 @@
+body,
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Arvo", sans-serif;
+}
+
+#todo {
+    margin-top: 25px;
+    margin-left: 25px;
+    background: rgba(0,0,0, .3);
+    width: 500px;
+    min-height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.todo-headline2 {
+    
+}
+
+.todo-input {
+    font-weight: bold;
+    background: #E7E7E7;
+    border: 1px solid #000;
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    height: 30px;
+}
+
+.todo-input:focus {
+    border: 1px solid #EA6161;
+}
+
+.todo-enter-btn {
+    height: 30px;
+    background: #CA4141;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.todo-enter-btn:hover {
+    background: #D95050;
+}
+
+.todo-enter-btn:active {
+    background: #B22929;
+}
+
+.todos {
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(255,255,255, .5);
+    display: flex;
+    flex-direction: column;
+}
+
+.todos .todos-item {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+.todos .todos-item .todos-del-button {
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border: 1px solid #D95050;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.todos .todos-item .todos-edit-button {
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border: 1px solid #D95050;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.todos .todos-item .todos-edit-button:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.todos .todos-item .todos-edit-button:active {
+    background: rgba(0, 0, 0, .9);
+}
+.todos .todos-item #todos-item-span.checked {
+  color: #ff;
+  text-decoration: line-through;
+}
+
